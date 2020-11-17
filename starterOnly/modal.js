@@ -20,13 +20,13 @@ function launchModal() {
   modalbg.style.display = "block";
 }
 
+
+
 // close modal 
 
 function closeModal() {
   modalbg.style.display = "none";
-}
-
-
+};
 
 
 function validate () {
@@ -87,6 +87,9 @@ function validate () {
   
 
   else {
-  return true
-  }
+    document.getElementById("submitMessage").style.display = "block";  
+    return true;
+    }
+
+
 }
