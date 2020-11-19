@@ -31,11 +31,11 @@ function closeModal() {
 
 document.querySelector("form").addEventListener("submit", validate);
 
-function validate (e) {
+function validate (e){
 
-  window.scrollY(0);
 
-  e.preventDefault()
+  e.preventDefault(); 
+  
   var prenom = document.forms["reserve"]["first"]
   var name = document.forms["reserve"]["last"];
   var conditions = document.forms["reserve"]["conditions"];
@@ -80,9 +80,10 @@ function validate (e) {
 
 
     if ( location1.checked == false & location2.checked == false & location3.checked == false & location4.checked == false & location5.checked == false & location6.checked == false) {
-      document.getElementById('errorLocation').innerHTML="Vous devez choisir une villes";
+      document.getElementById('errorLocation').innerHTML="Vous devez choisir une ville ou plus";
+      return false
     }
-    return false
+    
   }
 
   if (conditions.checked == false) {
