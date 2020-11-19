@@ -465,10 +465,37 @@ input[data-error]::after {
     color: white;
 }
 
+#submitMessage
+{
+  color: #ffffff;
+  background-color: #232323;
+  text-align: center;
+}
+
+#submitMessage > h1 
+{
+  position: relative;
+  width: 30%;
+  margin: auto;
+  top: 30%;
+
+}
+
 #btnSubmitMessage
 {
-  color: white;
+  background-color: #fe142f ;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  padding: 1em;
+  position: relative;
+  top: 60%;
+  width: 150px;
+  margin: auto;
+
 }
+
+
 
 
 
@@ -628,6 +655,22 @@ footer {
     margin-bottom: 0;
   }
 
+   #submitMessage 
+   {
+     height: 90%;
+     top : 10%;
+   }
+   #submitMessage > h1 
+   {
+     width: 80%;
+   }
+
+   #submitMessage > button 
+   {
+      top: 50%;
+   }
+  
+
 }
 
 @media screen and (max-width: 500px)
@@ -643,5 +686,6 @@ footer {
     font-size: 13px;
   }
 }
+
 
 

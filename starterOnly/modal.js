@@ -18,6 +18,7 @@ modalBtn.forEach((btn) => btn.addEventListener("click", launchModal));
 // launch modal form
 function launchModal() {
   modalbg.style.display = "block";
+  window.scrollTo(0, 0);
 }
 
 
@@ -28,8 +29,13 @@ function closeModal() {
   modalbg.style.display = "none";
 };
 
+document.querySelector("form").addEventListener("submit", validate);
 
-function validate () {
+function validate (e) {
+
+  window.scrollY(0);
+
+  e.preventDefault()
   var prenom = document.forms["reserve"]["first"]
   var name = document.forms["reserve"]["last"];
   var conditions = document.forms["reserve"]["conditions"];
@@ -91,5 +97,10 @@ function validate () {
     return true;
     }
 
+}
 
+function closeSubmitMessage() {
+  document.querySelector("#submitMessage").style.display = "none";
+  modalbg.style.display = "none";
+  
 }

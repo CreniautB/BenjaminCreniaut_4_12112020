@@ -58,9 +58,9 @@
           <div class="modal-body">
             <form
               name="reserve"
-              action="index.html"
+              action="#"
               method="get"
-              onsubmit="return validate()"
+              id="form"
             >
               <div
                 class="formData">
@@ -228,8 +228,9 @@
       </div>
 
       <div id="submitMessage">
+        <span class="close" onclick="closeSubmitMessage()" id="closeSubmit" ></span>
         <h1>Merci ! Votre réservation a été reçue.</h1>
-        <button id="btnSubmitMessage" >clic here</button>
+        <button id="btnSubmitMessage" onclick="closeSubmitMessage()" >Fermer</button>
       </div>
 
     </main>
