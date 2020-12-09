@@ -445,6 +445,8 @@ input[data-error]::after {
   display: none;
 }
 
+
+/* display message when the user input in false*/ 
 .error 
 {
   font-size: 16px ;
@@ -452,6 +454,9 @@ input[data-error]::after {
   font-weight: 100;
 }
 
+
+
+/* Submit Message when the form is true */
 #submitMessage
 {
     display: none;
@@ -496,9 +501,6 @@ input[data-error]::after {
 }
 
 
-
-
-
 footer {
   padding-left: 2vw;
   padding-right: 2vw;
@@ -509,7 +511,7 @@ footer {
 
 
 
-
+/* Queries */
 
 @media screen and (max-width: 1200px) {
 
@@ -558,7 +560,6 @@ footer {
     width: 175px;
   }
   
-
   .hero-section {
     display: block;
     box-shadow: unset;
@@ -643,10 +644,9 @@ footer {
     padding: 0;
   }
 
-
   .bground
   {
-    top: 10%; 
+    top: 11%; 
     height: 90%;
   }
   .bground .content
@@ -675,11 +675,9 @@ footer {
 
 @media screen and (max-width: 500px)
 {
-  
   .header-logo > img
   {
     width: 130px;
-
   }
   .hero-text
   {
@@ -687,5 +685,9 @@ footer {
   }
 }
 
-
-
+@media only screen and (orientation : landscape) and (max-width : 950px) 
+{
+  .bground{
+    top: 17%;
+  }
+}

@@ -1,3 +1,5 @@
+
+// Nav Responsive
 function editNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
@@ -21,19 +23,17 @@ function launchModal() {
   window.scrollTo(0, 0);
 }
 
-
-
 // close modal 
 
 function closeModal() {
   modalbg.style.display = "none";
 };
 
+// validate function check all users inputs
+
 document.querySelector("form").addEventListener("submit", validate);
 
 function validate (e){
-
-
   e.preventDefault(); 
   
   var prenom = document.forms["reserve"]["first"]
@@ -70,7 +70,6 @@ function validate (e){
 
 
   if ( quantity.value != 0 ) {
-    
     var location1 = document.getElementById('location1');
     var location2 = document.getElementById('location2');
     var location3 = document.getElementById('location3');
@@ -83,7 +82,6 @@ function validate (e){
       document.getElementById('errorLocation').innerHTML="Vous devez choisir une ville ou plus";
       return false
     }
-    
   }
 
   if (conditions.checked == false) {
@@ -92,16 +90,15 @@ function validate (e){
     return false;
   }
   
-
   else {
     document.getElementById("submitMessage").style.display = "block";  
     return true;
     }
-
 }
+
+// close modal
 
 function closeSubmitMessage() {
   document.querySelector("#submitMessage").style.display = "none";
-  modalbg.style.display = "none";
-  
+  modalbg.style.display = "none"; 
 }

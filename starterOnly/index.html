@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <title>Reservation</title>
+    <title>Reservation Game On </title>
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="modal.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -14,7 +14,7 @@
   <body>
     <div class="topnav" id="myTopnav">
       <div class="header-logo">
-      <img alt="logo" src="Logo.png" width="auto" height="auto" />
+      <img src="Logo.png" alt="logo"/>
     </div>
     <div class="main-navbar">
       
@@ -26,7 +26,6 @@
       <a href="javascript:void(0);" class="icon" onclick="editNav()">
         <i class="fa fa-bars"></i>
       </a>
-    </div>
     </div>
   </div>
     <main>
@@ -83,8 +82,7 @@
                   type="text"
                   id="last"
                   name="last"
-                  
-                  
+                                   
                 /><br>
 
                 <span class="error" id="errorname"></span>
@@ -109,7 +107,6 @@
                   type="date"
                   id="birthdate"
                   name="birthdate"
-                  value="0"
                 /><br>
 
                 <span class="error" id="errorDate"></span>
@@ -188,10 +185,7 @@
                 />
                 <label class="checkbox-label" for="location6">
                   <span class="checkbox-icon"></span>
-                  Portland</label
-                >
-
-                
+                  Portland</label>
               </div>
 
               <span class="error" id="errorLocation"></span>
@@ -217,9 +211,8 @@
                 <br>
               </div>
               <input
-                class="btn-submit"
+                class="button btn-submit"
                 type="submit"
-                class="button"
                 value="C'est parti"
               />
             </form>
